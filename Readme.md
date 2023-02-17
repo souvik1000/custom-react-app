@@ -1,4 +1,5 @@
 I have created a webpack and babel based custom react app, where you don't need a support of create-react-app. \
+
 You can start your project directly after cloning this component directly. [copy clone link](https://github.com/souvik1000/custom-react-app.git)
 
 ## Steps need to be follow -
@@ -19,12 +20,17 @@ But if you want to attach CSS with bundle.js, that support is also there. Just y
 
 In the project directory, you can run:
 
-### `npm start` - will run the project with webpack-dev-server
+### `npm start` 
+- will run the project with webpack-dev-server
 
-### Can add the --open flag, helps you to start showing browser when you will start the server.
+### Can add: `--open` flag
+- helps you to start showing browser when you will start the server.
+
+### Already added: `--hot` flag
+- helps you see smoothness on coding. Whenever you change something in your code, it will automatically reload that component, rather than reloading the whole page.
 
 Runs the app in the development mode.\
-Open [http://localhost:8081](http://localhost:8081) to view it in the browser.
+Open [http://localhost:8080](http://localhost:8080) `or` [http://localhost:8081](http://localhost:8081) to view it in the browser.
 
 The component will reload if you make edits (by --hot reload), not the whole page\
 
