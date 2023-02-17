@@ -1,0 +1,35 @@
+/* 
+Get Module build failed, unexpected token .App{...}
+So, to add this css file, we have to install css-loader 
+and add it into the Webpack config.
+
+But after adding css-loader, it will able to load css 
+module but couldn't get any style effect into the browser.
+
+So, for that reason, we have to install style-loader, to 
+add that style to our created index.html in its <head> tag.
+Also, have to add this style-loader into the webpack.config.js
+As, webpack use loader from the right of the array, "style-loader"
+should be put before "css-loader".
+
+But if we don't want to add it with our bundle.js, then rather 
+using style-loader have to user MiniCssExtractPlugin, which will
+help you to create a separate file for css too.
+*/
+#appWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.app {
+    padding: 8px;
+    font-size: 2.5vw;
+    font-weight: 600;
+    letter-spacing: 0.15rem;
+}
+.image {
+    margin: 32px;
+    width: 450px;
+    height: 450px;
+}
